@@ -1,4 +1,4 @@
-/*Define an Employee class and take the details of the ID,name,Salary,Date of Birth, Date of Joining.And Raise an Exception if the employee's date of joining is before the Date of Birth and If the date of joining is not less than 22 years from Date of birth
+/*Define an Employee class and take the details of the ID,name,Salary,Date of Birth, Date of Joining.And Raise an Exception if the employee's date of joining is before the Date of Birth and If the date of joining is not less than 22 years from Date of birth*/
 import java.util.*;
 class AgeLessException extends Exception
 {
