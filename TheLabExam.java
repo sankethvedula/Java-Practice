@@ -1,4 +1,5 @@
-/*Define an Employee class and take the details of the ID,name,Salary,Date of Birth, Date of Joining.And Raise an Exception if the employee's date of joining is before the Date of Birth and If the date of joining is not less than 22 years from Date of birth*/
+/*Define an Employee class and take the details of the ID,name,Salary,Date of Birth, Date of Joining.
+And Raise an Exception if the employee's date of joining is before the Date of Birth and If the date of joining is not less than 22 years from Date of birth*/
 import java.util.*;
 class AgeLessException extends Exception
 {
@@ -54,7 +55,7 @@ public static void main(String[] args)
 	try{
 		if(YOJ_year1<DOB_year1)
 		{
-			throw new AgeLessException("Error");				
+			throw new AgeLessException("Employee's Joining Date is earlier than the Date of Birth. Please check what you've entered!");				
 		}
 	
 		}
@@ -65,7 +66,7 @@ public static void main(String[] args)
 	try {
 		if ((YOJ_year1 == DOB_year1)&&(YOJ_month1 < DOB_month1))
 		{
-			throw new AgeLessException("Error");			
+			throw new AgeLessException("Employee's Joining Date is earlier than the Date of Birth. Please check what you've entered!");			
 		}
 		}
 	catch(AgeLessException ale)
@@ -75,7 +76,7 @@ public static void main(String[] args)
 	try {
 		if ((YOJ_year1 == DOB_year1)&&(YOJ_month1 == DOB_month1)&&(YOJ_date1<DOB_date1))
 		{
-			throw new AgeLessException("Error");			
+			throw new AgeLessException("Employee's Joining Date is earlier than the Date of Birth. Please check what you've entered!");			
 		}
 		}
 	catch(AgeLessException ale)
@@ -85,7 +86,7 @@ public static void main(String[] args)
 	try{
 		if (YOJ_year1-DOB_year1 < 22)
 		{
-			throw new AgeMoreException("Exception");
+			throw new AgeMoreException("Employee shouldn't be less than 22 years of age.");
 		}
 		}
 	catch(AgeMoreException ame)
